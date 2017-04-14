@@ -700,6 +700,7 @@ up <path>/../server.up
 
 # Push the 'server subnet route' to the clients
 push "route 192.168.1.0 255.255.255.0"
+push "redirect-gateway def1"
 # Push the WINS server to the clients - if we have a Samba WINS server.
 ; push "dhcp-option WINS 192.168.1.77"
 # define the client network
